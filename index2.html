@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Orbitron", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        html {
+            overflow-x: hidden !important;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="main-container" class="">
+        <!-- navbar starts from here -->
+        <header class="flex lg:justify-center lg:h-12 h-20 lg:h-20 overflow-hidden container mx-auto justify-between">
+            <div class="flex place-items-center pl-4 lg:hidden">
+                <div class="flex-2 text-2xl text-slate-700 font-black tracking-normal">TECHATHON</div>
+            </div>
+            <div
+                class="pointer-events-none w-full h-screen lg:h-full absolute lg:static translate-x-full lg:-translate-x-0 top-0 left-0 right-0 z-30 lg:z-0">
+                <nav
+                    class="flex flex-col text-center h-full tracking-widest lg:flex-row justify-evenly lg:place-items-center text-xl lg:text-xl py-1 uppercase">
+                    <div>About</div>
+                    <div>Timeline</div>
+                    <div>Themes</div>
+                    <div class="hidden lg:inline flex-2 text-sm lg:text-3xl text-slate-700 font-black tracking-normal">
+                        TECHATHON</div>
+                    <div>Queries</div>
+                    <div>FAQS</div>
+                    <div>Sponsors</div>
+                </nav>
+            </div>
+            <div class="lg:hidden pr-3 flex justify-center place-items-center w-12 z-30"><i class="ri-menu-line ri-2x"
+                    class="w-full"></i></div>
+            <div class="lg:hidden hidden flex justify-center place-items-center w-12 z-30"><i class="ri-close-fill ri-2x"></i>
+            </div>
+        </header>
+        <!-- navbar ends here -->
+
+        <!-- hero section starts from here -->
+        <section class=" flex justify-center align-center lg:h-[calc(100vh-5rem)] mx-2 lg:pb-5">
+            <div class="flex-grow relative container rounded-lg overflow-hidden">
+                <video autoplay muted preload="true" loop id="bgvid" class="w-full h-full scale-125">
+                    <source src="./media/video/gradient-bg.mp4" type="video/mp4">
+                </video>
+                <div
+                    class="absolute text-slate-700 z-20 top-1/2 left-1/2 lg:transform -translate-y-1/2 -translate-x-1/2 ">
+                    <div class="text-sm lg:text-2xl tracking-widest font-medium text-center lg:pb-4">ALFA CODING CLUB
+                        PRESENTS</div>
+                    <div class="text-5xl lg:text-9xl font-black">TECHATHON</div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section ends here -->
+
+        <!-- registration info starts from here -->
+        <section id="registration-info" class="flex flex-col justify-center place-items-center mx-2">
+            <div
+                class="uppercase font-normal text-sm text-gray-500 mx-auto container text-center lg:text-3xl antialiased py-4 lg:py-8 ">
+                Last registration date
+            </div>
+            <div
+                class="container flex flex-row flex-wrap lg:flex-nowrap  justify-center lg:flex-row lg:space-x-4 lg:mb-4">
+                <div class="lg:basis-1/4 grow bg-white rounded-lg h-20 lg:h-40 flex flex-col shadow-md">
+                    <div class="m-auto">
+                        <div class="lg:text-xl text-sm font-normal tracking-widest lg:indent-1.5">DATE</div>
+                        <div class="lg:text-4xl text-lg font-medium py-0.5">12 NOVEMBER</div>
+                    </div>
+                </div>
+                <div class="lg:basis-1/4 grow ml-2 mb-2 bg-white rounded-lg h-20 lg:h-40 flex flex-col shadow-md">
+                    <div class="m-auto">
+                        <div class="lg:text-xl text-sm font-normal tracking-widest lg:indent-1.5">DAY</div>
+                        <div class="lg:text-4xl text-lg font-medium py-0.5">SATURDAY</div>
+                    </div>
+                </div>
+                <div class="lg:basis-1/2 sm:ml-2 grow bg-white rounded-lg h-20 lg:h-40 flex flex-col shadow-md">
+                    <div class="m-auto">
+                        <div class="lg:text-xl text-sm font-normal tracking-widest lg:indent-1.5">VENUE</div>
+                        <div class="lg:text-4xl text-lg font-medium py-0.5">MULTIPURPOSE HALL, TIPS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- registration info ends here -->
+
+        <!-- about section starts from here -->
+        <section id="about" class=" flex justify-center px-2 py-6 lg:pb-6 lg:pt-0">
+            <div class="container shadow-md rounded-lg overflow-hidden flex lg:flex-row flex-col bg-white">
+                <div class="flex flex-col lg:flex-row place-items-center justify-between relative  h-96 lg:basis-4/12 ">
+                    <div
+                        class="lg:text-3xl text-xl lg:text-left text-center lg:absolute pt-6 lg:pt-0 lg:pt-0 lg:pl-10 z-10">
+                        Get <br> Yourself <br>Registered</div>
+                    <div class=" py-10 overflow-hidden lg:absolute lg:-right-48 scale-150 lg:scale-125">
+                        <video autoplay muted preload="true" loop id="bgvid" class=" h-full ">
+                            <source src="./media/video/ticket.webm" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div
+                    class="lg:basis-8/12 px-4  text-center lg:text-left sm:h-60 lg:h-96 flex flex-col justify-center lg:p-12">
+                    <div class="lg:text-4xl text-lg font-medium pb-1 lg:pb-4">ABOUT TECHATHON</div>
+                    <div class="lg:text-xl text-sm font-normal text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores non, fugiat voluptatum
+                        id iure tenetur ratione neque! Quo corporis vitae atque sit repellat consequuntur accusantium
+                        eligendi expedita ab maiores!
+                    </div>
+                    <div class="flex pb-6 lg:pb-0 justify-center lg:justify-normal flex-wrap pt-8">
+                        <a class="relative" href="#">
+                            <span class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-black"></span>
+                            <span
+                                class="fold-bold relative inline-block h-full w-full rounded border-2 border-black bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:text-gray-900 dark:bg-transparent">Register
+                                Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends here -->
+
+
+        <section>
+            <div class="container flex flex-col lg:flex-row space-x-4 bg-red-300 mx-auto">
+        
+                
+            </div>
+        </section>
+
+
+    </div>
+
+
+    
+
+</body>
+
+</html>
